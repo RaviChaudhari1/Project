@@ -1,0 +1,187 @@
+:root {
+  --primary-bgcolor: #e0f6ff;
+  --primary-fontcolor: #3d058c;
+}
+
+/* background: #4682b4;
+  color: #fff; */
+/* background: #1c1c1c;
+  color: #fff; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-align: start;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+/* ---------header----------------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(38, 154, 214, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(38, 154, 214, 0.11);
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 9;
+}
+.header a {
+  text-decoration: none;
+  color: var(--primary-fontcolor);
+}
+/* -------------heading-------------- */
+.heading {
+  font-size: 3rem;
+  position: relative;
+  padding-right: 12rem;
+}
+
+#page-title {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 2.6rem;
+  right: 2rem;
+}
+.day-date {
+  font-size: 1.2rem;
+  position: relative;
+  top: -0.5rem;
+  left: 0.5rem;
+}
+/* ---------------page content--------------- */
+.page-content {
+  margin-top: 10rem;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar input {
+  background: rgba(131, 210, 243, 0.38);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(131, 210, 243, 0.87);
+  padding: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 0.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #2d3250;
+  font-weight: 550;
+}
+.search-bar img {
+  height: 80px;
+  position: relative;
+  z-index: 8;
+  top: 1.8rem;
+  left: 1rem;
+  border-radius: 50%;
+  transform: rotateZ(-26deg);
+}
+.city-details {
+  margin-top: 4rem;
+  border-radius: 6px;
+  background-color: #ae91d6;
+  text-align: center;
+  padding: 0.5rem;
+}
+.illustration img {
+  height: 250px;
+  object-fit: contain;
+  position: relative;
+  right: -450px;
+}
+.message-box img {
+  height: 300px;
+  object-fit: contain;
+  position: relative;
+  right: -510px;
+  bottom: 520px;
+  transform: rotateZ(20deg);
+}
+.message {
+  position: relative;
+  bottom: 780px;
+  right: -560px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  height: 8rem;
+  width: 13rem;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message::-webkit-scrollbar {
+  display: none;
+}
+.did-you-know {
+  position: relative;
+  bottom: 490px;
+  right: -490px;
+  z-index: 8;
+  font-size: 1.5rem;
+  font-weight: 800;
+  transform: rotateZ(-15deg);
+  background-color: #e0f6ffeb;
+  display: none;
+}
+.page1 {
+  background: var(--primary-bgcolor);
+  color: var(--primary-fontcolor);
+}
+.page2 {
+  background: var(--primary-bgcolor);
+  color: var(--primary-fontcolor);
+}
+.page2-container {
+  margin-top: 10rem;
+}
+.page3 {
+  background: var(--primary-bgcolor);
+  color: var(--primary-fontcolor);
+}
+.page3-container {
+  margin-top: 10rem;
+}
+.page4 {
+  background: var(--primary-bgcolor);
+  color: var(--primary-fontcolor);
+}
+.page4-container {
+  margin-top: 10rem;
+}
