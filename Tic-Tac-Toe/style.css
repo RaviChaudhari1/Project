@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #007991;
+  --box-color: #222e50;
+  --text-color: #e9d985;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: #bcd8c1;
+  margin: 2rem 0;
+  border-radius: 0.3rem;
+}
+.gameHeading {
+  font-family: "Bitcount Prop Single", system-ui;
+  font-weight: 400;
+  padding: 0.6rem;
+  font-size: 3rem;
+}
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 27rem;
+  height: auto;
+  gap: 2rem;
+  border: 3px solid #bcd8c1;
+  border-radius: 0.3rem;
+  padding: 0.6rem;
+}
+.boxes {
+  height: 7rem;
+  width: 7rem;
+  background-color: var(--box-color);
+  color: var(--text-color);
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px #243259;
+}
+.boxes:hover {
+  background-color: #4e5872;
+}
+.btn {
+  background-color: #bcd8c1;
+  margin: 2rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.1rem;
+}
