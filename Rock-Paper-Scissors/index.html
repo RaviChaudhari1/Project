@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock-Paper-Scissor</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Rock-Paper-Scissor</h1>
+    </div>
+    <div class="game-container">
+      <div class="user-choices">
+        <p>Your Choices</p>
+        <img id="rock" class="choice" src="images/rock.png" alt="Rock" />
+        <img id="paper" class="choice" src="images/paper.png" alt="Paper" />
+        <img id="scissors" class="choice" src="images/scissors.png" alt="Scissors" />
+      </div>
+      <div class="result-section">
+        <div class="score-section">
+          <div class="user-data">
+            <p class="scores" id="user-score">0</p>
+            <p>Your Points</p>
+          </div>
+          <div class="comp-data">
+            <p class="scores" id="comp-score">0</p>
+            <p>Computer Point</p>
+          </div>
+        </div>
+        <div class="msg-section">
+            <p class="msg">Choose Stone, Paper or Scissors
+            </p>
+        </div>
+        <div class="reset-btn">
+          <button>Reset Game</button>
+        </div>
+      </div>
+      <div class="comp-choices">
+        <p>Computer's Choices</p>
+        <img id="comp-rock" src="images/rock.png" alt="Rock" />
+        <img id="comp-paper" src="images/paper.png" alt="Paper" />
+        <img id="comp-scissors" src="images/scissors.png" alt="Scissors" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
